@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import requests
 import os
 
+
 # getting current quotation of all coins
 quotes = requests.get('https://economia.awesomeapi.com.br/json/all')
 quotes_dic = quotes.json()  # creates a quotation python dict using .json() method
