@@ -15,12 +15,14 @@ peso = quotes_dic["ARS"]["bid"]
 load_dotenv()  # loading environment variables to authenticate in Twilio
 
 # creating variables
-account_sid = os.environ['TWILIO_ACCOUNT_SID']
-auth_token = os.environ['TWILIO_AUTH_TOKEN']
-sender = os.environ['SENDER']
+# account_sid = os.environ['TWILIO_ACCOUNT_SID']
+# auth_token = os.environ['TWILIO_AUTH_TOKEN']
+# sender = os.environ['SENDER']
 
 # instantiating Client, from Twilio
-client = Client(account_sid, auth_token)
+# client = Client(account_sid, auth_token)
+
+client = Client()
 
 # getting phone number list registered in Twilio
 outgoing_caller_ids = client.outgoing_caller_ids.list(limit=20)
