@@ -15,7 +15,7 @@ peso_arg_name = quotes_dic["BRLARS"]["name"]
 dollar_name = quotes_dic["USDBRL"]["name"]
 euro_name = quotes_dic["EURBRL"]["name"]
 
-client = Client("ACbade097588007374e1839cb7e55aefc0", "95b2c09867501d18e792eb91fb15af4e")
+client = Client()
 
 # getting phone number list registered in Twilio
 outgoing_caller_ids = client.outgoing_caller_ids.list(limit=20)
